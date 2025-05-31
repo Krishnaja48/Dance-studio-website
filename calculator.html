@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>MY APP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label>Enter the first number:</label>
+            <input id="first"></br><br>
+            <label>Enter the second number: </label>
+          <input id="second"></form></br>
+            <select id="operator">
+                <option>+</option>
+                 <option>-</option>
+                  <option>*</option>
+                   <option>/</option>
+                
+            </select>
+            <button onclick="calculate()">Submit</button>
+            <h2>Result:<span id="resulttext"></span></h2>
+            <h1 id="resulttext"> </h1>
+        </form>
+        <a href="/index.html">Go back</a>
+    </div>
+<script>
+    let no1=parseInt(document.getElementById("first").value);
+    let no2=parseInt(document.getElementById("second").value);
+    let op=document.getElementById("operator").value;
+    
+    var result=0;
+    function calculate()
+    {
+        if(op=="+"){
+            result=no1+no2;
+        }
+            else if(op=="-"){
+                result=no1-no2;
+        }
+        else if(op=="*"){
+            result=no1*no2;
+        }
+        else{
+            result=no1/no2;
+        }
+        document.getElementById("resulttext").innerText=result;
+        event.preventDefault();
+    }
+     console.log(result)
+     </script>
+</body>
+</html>

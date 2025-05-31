@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Merienda:wght@300..900&family=Noto+Serif:ital,wdth,wght@1,67.7,181&family=Pacifico&family=Sacramento&family=Satisfy&display=swap');
+*{
+    scroll-behavior:smooth;
+}
+body{
+    background-color:snow;
+    background-image: url("img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    font-style: italic;
+    block-size: 0%;
+    
+}
+
+.navbar{
+    background-color:black;
+    position: sticky;
+    top: 0%;
+    
+}
+li{
+    color:antiquewhite
+}
+.navbar ul{
+    display:flex;
+    width: 100%;
+    justify-content:space-evenly;
+    margin: 0;
+   
+}
+form{
+    background-color: transparent;
+    border: darkgray;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    
+
+     }
+.kk{
+    color:black;
+    background-color: aliceblue;
+
+}
+h1{
+  animation: Color 10s;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+  
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+.aboutme{
+    height: 55vh;
+      font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+    
+}
+details{
+       font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 181;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 67.7;
+}
+p{
+      font-family: "Ancizar Serif", serif;
+  font-optical-sizing:auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: large;
+}
+
+@keyframes Color{
+  0%{
+    color:black;
+    transform: translateY(100px);
+  }50%{
+    background-color: aliceblue;
+  }
+  100%{
+    color: aquamarine;
+  }
+}
